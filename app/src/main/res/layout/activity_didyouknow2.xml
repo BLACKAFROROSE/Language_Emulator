@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".didyouknow.didyouknow2">
+
+    <TextView
+        android:id="@+id/diduknow2title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Did you Know"
+        android:textSize="30dp"
+        android:textStyle="bold"
+        android:layout_margin="10dp"
+        android:layout_centerHorizontal="true"/>
+
+    <TextView
+        android:id="@+id/diduknow3text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=" Layout XML Files: Layout xml files are used to define the actual UI(User interface) of our application. It holds all the elements(views) or the tools that we want to use in our application. Like the TextView’s, Button’s and other UI elements."
+        android:textSize="28dp"
+        android:layout_below="@+id/diduknow2title"
+        android:layout_margin="10dp"/>
+
+    <Button
+        android:id="@+id/button3"
+        android:layout_alignParentBottom="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Next Page"
+        android:textSize="20dp"
+        android:layout_margin="20dp"
+        android:onClick="diduknow3"/>
+</RelativeLayout>

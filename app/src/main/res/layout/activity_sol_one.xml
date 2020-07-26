@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".emulator_solutions.sol_one">
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="An implicit intent specifies an action that can invoke any app on the device able to perform the action. Using an implicit intent is useful when your app cannot perform the action, but other apps probably can. If there is more than one application registered that can handle this request, the user will be prompted to select which one to use.
+
+However, it is possible that there are no applications that can handle your intent. In this case, your application will crash when you invoke startActivity(). To avoid this, before calling startActivity() you should first verify that there is at least one application registered in the system that can handle the intent. To do this use resolveActivity() on your intent object:
+
+   "
+        android:layout_margin="5dp"
+        android:textSize="20dp"
+        android:textColor="@color/colorPrimaryDark"/>
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="
+        // Verify that there are applications registered to handle this intent
+    // (resolveActivity returns null if none are registered)
+    if (sendIntent.resolveActivity(getPackageManager()) != null) {
+        startActivity(sendIntent);
+    } "
+        android:layout_below="@+id/textView2"
+
+        android:layout_margin="5dp"
+        android:textSize="20dp"
+        android:textColor="@color/colorPrimaryDark"/>
+
+    <Button
+        android:id="@+id/button9"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Back"
+        android:layout_below="@+id/textView3"
+        android:layout_margin="10dp"
+        android:onClick="question1"
+        />
+</RelativeLayout>
